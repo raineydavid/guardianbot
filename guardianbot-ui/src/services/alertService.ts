@@ -10,7 +10,7 @@ export const fetchAlerts = async (): Promise<ChatAlert[]> => {
       console.error("Error fetching alerts:", error);
       throw error;
     }
-    return [data[0]];
+    return data;
   } catch (error) {
     console.error("Failed to fetch alerts:", error);
     return [];
@@ -22,18 +22,19 @@ export const updateAlertReviewStatus = async (
   id: string,
   reviewed: boolean
 ) => {
-  // try {
-  //   const { error } = await supabase
-  //     .from("Alert")
-  //     .update({ reviewed })
-  //     .eq("id", id);
-  //   if (error) {
-  //     console.error("Error updating alert review status:", error);
-  //     return false;
-  //   }
-  //   return true;
-  // } catch (error) {
-  //   console.error("Failed to update alert review status:", error);
-  //   return false;
-  // }
+  try {
+    console.log("reviewed ", reviewed);
+    const { error } = await supabase
+      .from("Alert")
+      .update({ reviewed })
+      .eq("id", id);
+    if (error) {
+      console.error("Error updating alert review status:", error);
+      return false;
+    }
+    return true;
+  } catch (error) {
+    console.error("Failed to update alert review status:", error);
+    return false;
+  }
 };
