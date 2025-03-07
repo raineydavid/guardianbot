@@ -13,7 +13,7 @@ import { NavLink } from "react-router-dom";
 const SideNav = () => {
   const navLinks = [
     { title: "Dashboard", href: "/", icon: HomeIcon },
-    { title: "Alerts", href: "/alerts", icon: ShieldAlert },
+    { title: "Guidance", href: "/guidance", icon: ShieldAlert },
     { title: "Children", href: "/children", icon: UserRound },
     { title: "Analytics", href: "/analytics", icon: BarChart },
     { title: "Alert Rules", href: "/rules", icon: Bell },

@@ -100,7 +100,6 @@ const Dashboard = () => {
   const totalAlerts = alerts.length;
   const pendingAlerts = alerts.filter((a) => !a.reviewed).length;
   const highSeverityAlerts = alerts.filter((a) => a.severity === "high").length;
-  console.log("alerts", alerts);
 
   return (
     <Layout>
