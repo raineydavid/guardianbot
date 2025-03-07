@@ -1,4 +1,5 @@
 export type AlertSeverity = "low" | "medium" | "high";
+export type Category = "Plagiarism" | "Inappropriate" | "Bullying";
 
 export interface Message {
   id: string;
@@ -19,4 +20,5 @@ export interface ChatAlert {
   flaggedMessage: Message;
   conversation: Message[];
   reviewed: boolean;
+  category?: Category;
 }

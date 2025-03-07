@@ -1,10 +1,17 @@
-
 import { useState } from "react";
 import { AlertSeverity } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
-import { Search, AlertTriangle, AlertCircle, Info, Filter, X } from "lucide-react";
+import {
+  Search,
+  AlertTriangle,
+  AlertCircle,
+  Info,
+  Filter,
+  X,
+} from "lucide-react";
+import { Category } from "../types";
 
 interface FilterControlsProps {
   onFilterChange: (filters: FilterState) => void;
@@ -15,6 +22,7 @@ export interface FilterState {
   severity: AlertSeverity[];
   showReviewed: boolean;
   showUnreviewed: boolean;
+  category: string;
 }
 
 const FilterControls = ({ onFilterChange }: FilterControlsProps) => {
@@ -23,6 +31,7 @@ const FilterControls = ({ onFilterChange }: FilterControlsProps) => {
     severity: ["high", "medium", "low"],
     showReviewed: true,
     showUnreviewed: true,
+    category: "",
   });
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -34,17 +43,36 @@ const FilterControls = ({ onFilterChange }: FilterControlsProps) => {
   const handleSeverityChange = (value: string[]) => {
     // Don't allow empty selection
     if (value.length === 0) return;
-    
+
     // Cast the string[] to AlertSeverity[] since we've validated that these values are valid
-    const severityValues = value.filter((v): v is AlertSeverity => 
-      v === 'high' || v === 'medium' || v === 'low'
+    const severityValues = value.filter(
+      (v): v is AlertSeverity => v === "high" || v === "medium" || v === "low"
     );
-    
-    const newFilters = { 
-      ...filters, 
-      severity: severityValues 
+
+    const newFilters = {
+      ...filters,
+      severity: severityValues,
     };
-    
+
+    setFilters(newFilters);
+    onFilterChange(newFilters);
+  };
+
+  const handleCategoryChange = (value: string[]) => {
+    // Don't allow empty selection
+    if (value.length === 0) return;
+
+    // Cast the string[] to AlertSeverity[] since we've validated that these values are valid
+    const categoryValues = value.filter(
+      (v): v is Category =>
+        v === "Plagiarism" || v === "Bullying" || v === "Inappropriate"
+    );
+
+    const newFilters = {
+      ...filters,
+      cagtegory: categoryValues,
+    };
+
     setFilters(newFilters);
     onFilterChange(newFilters);
   };
@@ -52,7 +80,7 @@ const FilterControls = ({ onFilterChange }: FilterControlsProps) => {
   const handleReviewedToggle = (showReviewed: boolean) => {
     // Don't allow both to be false
     if (!showReviewed && !filters.showUnreviewed) return;
-    
+
     const newFilters = { ...filters, showReviewed };
     setFilters(newFilters);
     onFilterChange(newFilters);
@@ -61,7 +89,7 @@ const FilterControls = ({ onFilterChange }: FilterControlsProps) => {
   const handleUnreviewedToggle = (showUnreviewed: boolean) => {
     // Don't allow both to be false
     if (!showUnreviewed && !filters.showReviewed) return;
-    
+
     const newFilters = { ...filters, showUnreviewed };
     setFilters(newFilters);
     onFilterChange(newFilters);
@@ -78,10 +106,10 @@ const FilterControls = ({ onFilterChange }: FilterControlsProps) => {
     onFilterChange(defaultFilters);
   };
 
-  const hasActiveFilters = 
-    filters.search !== "" || 
-    filters.severity.length !== 3 || 
-    !filters.showReviewed || 
+  const hasActiveFilters =
+    filters.search !== "" ||
+    filters.severity.length !== 3 ||
+    !filters.showReviewed ||
     !filters.showUnreviewed;
 
   return (
@@ -96,28 +124,42 @@ const FilterControls = ({ onFilterChange }: FilterControlsProps) => {
           onChange={handleSearchChange}
         />
       </div>
-      
+
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div className="flex flex-col gap-1.5">
           <label className="text-xs font-medium flex items-center gap-1.5">
             <Filter className="h-3.5 w-3.5" /> Severity:
           </label>
-          <ToggleGroup type="multiple" value={filters.severity} onValueChange={handleSeverityChange} className="justify-start">
-            <ToggleGroupItem value="high" className="px-2 py-1 h-auto data-[state=on]:bg-red-100 data-[state=on]:text-red-800 dark:data-[state=on]:bg-red-900/30 dark:data-[state=on]:text-red-300">
+          <ToggleGroup
+            type="multiple"
+            value={filters.severity}
+            onValueChange={handleSeverityChange}
+            className="justify-start"
+          >
+            <ToggleGroupItem
+              value="high"
+              className="px-2 py-1 h-auto data-[state=on]:bg-red-100 data-[state=on]:text-red-800 dark:data-[state=on]:bg-red-900/30 dark:data-[state=on]:text-red-300"
+            >
               <AlertTriangle className="h-3.5 w-3.5 mr-1" />
               High
             </ToggleGroupItem>
-            <ToggleGroupItem value="medium" className="px-2 py-1 h-auto data-[state=on]:bg-amber-100 data-[state=on]:text-amber-800 dark:data-[state=on]:bg-amber-900/30 dark:data-[state=on]:text-amber-300">
+            <ToggleGroupItem
+              value="medium"
+              className="px-2 py-1 h-auto data-[state=on]:bg-amber-100 data-[state=on]:text-amber-800 dark:data-[state=on]:bg-amber-900/30 dark:data-[state=on]:text-amber-300"
+            >
               <AlertCircle className="h-3.5 w-3.5 mr-1" />
               Medium
             </ToggleGroupItem>
-            <ToggleGroupItem value="low" className="px-2 py-1 h-auto data-[state=on]:bg-blue-100 data-[state=on]:text-blue-800 dark:data-[state=on]:bg-blue-900/30 dark:data-[state=on]:text-blue-300">
+            <ToggleGroupItem
+              value="low"
+              className="px-2 py-1 h-auto data-[state=on]:bg-blue-100 data-[state=on]:text-blue-800 dark:data-[state=on]:bg-blue-900/30 dark:data-[state=on]:text-blue-300"
+            >
               <Info className="h-3.5 w-3.5 mr-1" />
               Low
             </ToggleGroupItem>
           </ToggleGroup>
         </div>
-        
+
         <div className="flex flex-col gap-1.5">
           <label className="text-xs font-medium">Status:</label>
           <div className="flex gap-2">
@@ -139,7 +181,36 @@ const FilterControls = ({ onFilterChange }: FilterControlsProps) => {
             </Button>
           </div>
         </div>
-        
+
+        <div className="flex flex-col gap-1.5">
+          <label className="text-xs font-medium">Category:</label>
+          <ToggleGroup
+            type="multiple"
+            value={filters.category}
+            onValueChange={handleCategoryChange}
+            className="justify-start"
+          >
+            <ToggleGroupItem
+              value="Plagiarism"
+              className="px-2 py-1 h-auto data-[state=on]:bg-blue-100 data-[state=on]:text-blue-800 dark:data-[state=on]:bg-blue-900/30 dark:data-[state=on]:text-blue-300"
+            >
+              Plagiarism
+            </ToggleGroupItem>
+            <ToggleGroupItem
+              value="Sensitive"
+              className="px-2 py-1 h-auto data-[state=on]:bg-blue-100 data-[state=on]:text-blue-800 dark:data-[state=on]:bg-blue-900/30 dark:data-[state=on]:text-blue-300"
+            >
+              Sensitive Information
+            </ToggleGroupItem>
+            <ToggleGroupItem
+              value="Inappropriate"
+              className="px-2 py-1 h-auto data-[state=on]:bg-blue-100 data-[state=on]:text-blue-800 dark:data-[state=on]:bg-blue-900/30 dark:data-[state=on]:text-blue-300"
+            >
+              Mental Health Concerns
+            </ToggleGroupItem>
+          </ToggleGroup>
+        </div>
+
         {hasActiveFilters && (
           <Button
             variant="ghost"

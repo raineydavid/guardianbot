@@ -12,6 +12,7 @@ import { CheckCircle2, ChevronDown, ChevronUp, Eye, Clock } from "lucide-react";
 import { formatDistanceToNow } from "date-fns";
 import AlertBadge from "./AlertBadge";
 import ChatHistory from "./ChatHistory";
+import CategoryBadge from "./CategoryBadge";
 
 interface AlertCardProps {
   alert: ChatAlert;
@@ -29,6 +30,7 @@ const AlertCard = ({ alert, onReviewToggle }: AlertCardProps) => {
             <CardTitle className="text-lg font-bold flex items-center gap-2">
               {alert.childName}
               <AlertBadge severity={alert.severity} />
+              {alert.category && <CategoryBadge category={alert.category} />}
             </CardTitle>
             <p className="text-sm text-muted-foreground">
               {alert.aiPlatform} •{" "}

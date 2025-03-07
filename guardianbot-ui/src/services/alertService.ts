@@ -23,7 +23,6 @@ export const updateAlertReviewStatus = async (
   reviewed: boolean
 ) => {
   try {
-    console.log("reviewed ", reviewed);
     const { error } = await supabase
       .from("Alert")
       .update({ reviewed })
