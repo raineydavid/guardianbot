@@ -1,0 +1,52 @@
+## GuardianBot:  Guidance for Teachers - Addressing AI-Assisted Plagiarism (Students Aged 5-15)
+
+This guidance outlines the steps teachers should take when GuardianBot flags potential AI-assisted plagiarism.  It emphasizes educational interventions and open communication with students and parents.
+
+**I. Initial Steps (Post-Flagging by GuardianBot):**
+
+1. **Verify the Flag:** Review the flagged work alongside the student's previous submissions and classroom performance. Look for inconsistencies in style, vocabulary, or understanding.  Do not assume the flag automatically equates to plagiarism.
+
+2. **Private Conversation with the Student:** Arrange a private and non-confrontational meeting with the student.  The aim is to understand *how* the work was completed, not to accuse.
+
+    * **Sample Questions (Age-Appropriate):**
+        * "Can you tell me about how you researched and wrote this assignment?"
+        * "This section seems different from your usual writing. Can you explain your process here?"
+        * (For younger students) "Did you get any help with this homework?"
+
+3. **Gather Information:**  Determine if the student used an AI chatbot:
+    * If they admit to using AI:  Proceed to Step 4.
+    * If they deny using AI but you remain suspicious after further investigation:  Document your concerns and consult with your Head of Department/Year.  Do *not* directly accuse the student without clear evidence.
+
+**II.  Addressing AI Use & Educating the Student:**
+
+4. **Explain Academic Integrity:** Regardless of admission, use this opportunity to educate the student about plagiarism and appropriate research practices.  Explain why using AI chatbots to complete assignments undermines learning and academic integrity.
+
+    * **Key Concepts (Age-Appropriate):**
+        * Owning your work.
+        * The value of learning and developing skills.
+        * Citing sources and acknowledging help.
+
+5. **Consequences & Restorative Approach:** Explain the school's policy on plagiarism (e.g., rewriting the assignment, reduced grade).  Emphasize a restorative approach focused on learning from the mistake and developing good academic practices.
+
+**III. Communicating with Parents:**
+
+6. **Inform Parents:** Contact parents/guardians to explain the situation. Focus on the school's commitment to academic integrity and supporting the student's learning. Avoid accusatory language.
+
+    * **Sample Communication:** "We've noticed [student's name] may have used an AI tool inappropriately for their [subject] assignment. We're working with [him/her] to understand proper research methods and ensure future work meets our academic integrity standards."
+
+7. **Joint Discussion (if necessary):**  If the situation is complex or recurring,  arrange a meeting with the student, parents, and teacher to discuss strategies for supporting the student's learning and responsible technology use.
+
+
+**IV.  Prevention and Education:**
+
+* **Curriculum Integration:** Incorporate lessons on digital literacy, ethical AI use, and academic integrity into the curriculum across all subjects.
+* **Parent Workshops:** Offer workshops to educate parents about AI tools, their potential misuse, and strategies for supporting responsible technology use at home.
+* **Clear School Policy:**  Ensure the school's Acceptable Use Policy (AUP) explicitly addresses AI chatbot usage for academic work.  Make the policy accessible to students and parents.
+
+**V. Data Privacy Considerations:**
+
+* All discussions and actions regarding suspected AI plagiarism must adhere to the UK GDPR and Data Protection Act 2018.
+* Ensure appropriate data security measures are in place within GuardianBot and related systems.
+* Only collect and process data necessary for addressing academic integrity concerns.
+
+This guidance is designed to be a supportive framework. Teachers should adapt their approach based on the individual student's age, maturity level, and specific circumstances.  Consult with school leadership for complex cases or further guidance.

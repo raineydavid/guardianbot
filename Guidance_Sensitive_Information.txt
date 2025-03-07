@@ -1,0 +1,53 @@
+## GuardianBot: Guidance for Teachers - Addressing Disclosure of Sensitive Information via AI Chatbots (Students Aged 5-15)
+
+This guidance outlines the steps teachers should take when GuardianBot flags the disclosure of sensitive information by a student during AI chatbot interactions.  It prioritizes student safety, privacy, and open communication, in line with UK safeguarding standards.
+
+**I. Immediate Actions & Teacher Responsibilities:**
+
+1. **Review Flagged Conversation:** Carefully assess the nature and sensitivity of the disclosed information (personal details, family matters, location, etc.).
+
+2. **Initial Conversation (Age-Appropriate):** Arrange a private, non-judgmental conversation with the student.
+
+    * **Sample Questions:**
+        * **Younger Students (5-9):** "I noticed you were talking to the chatbot about [topic]. Can you tell me more about that?" "Who are the people you trust to talk to about private things?"
+        * **Older Students (10-15):** "I've noticed you shared some personal information with the chatbot. Can you help me understand why you felt comfortable doing that?" "Do you understand the potential risks of sharing this kind of information online?"
+
+3. **Document Concerns:** Keep a confidential, factual record of the conversation, the nature of the disclosed information, and the student's response. Avoid speculation or judgment.
+
+**II. Appropriate Escalation & Support Measures:**
+
+1. **Inform Designated Safeguarding Lead (DSL):** Immediately inform the DSL if the disclosed information suggests a risk of harm to the student or others (e.g., abuse, neglect, exploitation, radicalization), or if you have any other safeguarding concerns.
+
+2. **External Agency Involvement:** The DSL will determine if external agencies (Children's Social Care, police) need to be involved.  Follow school safeguarding procedures.
+
+3. **Counseling/Support:**  If the student exhibits emotional distress or anxiety, refer them to the school counselor or other support services.
+
+**III. Detailed Communication Plan:**
+
+1. **Communication with Students (Age-Appropriate):**
+    * **Younger Students:** Explain in simple terms why sharing personal information online is unsafe, using analogies like "stranger danger" and emphasizing the importance of talking to trusted adults.
+    * **Older Students:** Discuss online privacy, data security, digital footprints, and the potential consequences of sharing sensitive information. Emphasize critical thinking and responsible online behaviour.
+
+2. **Communication with Parents/Guardians:**
+    * **Sample Communication:** "We've noticed that [student's name] shared some personal information during a chatbot interaction.  We want to partner with you to reinforce online safety practices at home and school. We've discussed this with [student's name] and encouraged [him/her] to be mindful of online privacy."  Remain supportive and avoid blaming.
+
+3. **Stakeholder Engagement:** Keep relevant staff (DSL, counselors, senior leadership) informed, ensuring a consistent and coordinated response.
+
+**IV. Preventive & Educational Measures:**
+
+1. **Digital Literacy & Online Safety Curriculum:** Integrate age-appropriate lessons on online privacy, data security, responsible use of AI, and recognizing sensitive information.
+
+2. **E-Safety Assemblies/Workshops:**  Reinforce school values related to privacy, respect, and responsible digital citizenship.  Engage external speakers or online safety experts.
+
+3. **Parent Awareness Sessions:** Educate parents about online safety risks, strategies for monitoring children's online activities, and open communication about digital well-being.
+
+**V. Compliance & Data Privacy:**
+
+1. **UK GDPR & Data Protection Act 2018:** Adhere to data protection principles.  Ensure data is processed lawfully, fairly, and transparently. Obtain parental consent before sharing information with external agencies (unless legal obligations require otherwise).
+
+2. **Safeguarding Standards:**  Strictly adhere to school safeguarding policies. Report any concerns to the DSL.
+
+3. **Confidentiality & Data Security:** Securely store all flagged conversations and related records. Restrict access to authorized personnel only.  Follow data retention policies.
+
+
+This guidance offers a framework. Teachers should adapt their approach to individual student needs and specific circumstances.  Consult with the DSL or school leadership for complex cases or further guidance.
