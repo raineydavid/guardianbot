@@ -570,7 +570,7 @@ const MultiUserMonitoringSystem = () => {
         {showAPIDetails && (
           <div className="w-80 bg-gray-800 text-white overflow-y-auto">
             <div className="p-3 border-b border-gray-700 flex justify-between items-center">
-              <h2 className="font-bold">SafeGuard API Calls</h2>
+              <h2 className="font-bold">GuardianBot API Calls</h2>
               <button 
                 onClick={() => setShowAPIDetails(false)}
                 className="text-gray-400 hover:text-white"
