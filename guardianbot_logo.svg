@@ -1,0 +1,120 @@
+<!--
+   Guardianbot Logo (SVG)
+   Save as "guardianbot_logo.svg" or embed directly in your webpage.
+   Adjust width and height values as you see fit.
+-->
+<svg
+    width="200"
+    height="200"
+    viewBox="0 0 200 200"
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    aria-labelledby="title"
+>
+  <title id="title">Guardianbot Logo</title>
+  <!-- Robot Head -->
+  <circle
+    cx="100"
+    cy="65"
+    r="30"
+    fill="#CBD3DA"  <!-- Light gray color for robot head -->
+  />
+
+  <!-- Robot Face (eyes + friendly smile) -->
+  <circle cx="90" cy="60" r="3" fill="#444444" />
+  <circle cx="110" cy="60" r="3" fill="#444444" />
+  <path
+    d="M85,70 Q100,80 115,70"
+    stroke="#444444"
+    stroke-width="3"
+    fill="none"
+  />
+
+  <!-- Antenna -->
+  <line
+    x1="100"
+    y1="35"
+    x2="100"
+    y2="20"
+    stroke="#444444"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+  <circle
+    cx="100"
+    cy="15"
+    r="5"
+    fill="#444444"
+  />
+
+  <!-- Robot Body -->
+  <rect
+    x="70"
+    y="85"
+    width="60"
+    height="50"
+    rx="8"
+    fill="#CBD3DA"
+  />
+
+  <!-- Shield (Protective symbol) -->
+  <path
+    d="M125,90
+       L145,100
+       L145,115
+       L125,125
+       L105,115
+       L105,100
+       Z"
+    fill="#A6B9C8"
+  />
+  <!-- Shield checkmark -->
+  <path
+    d="M114,108 L120,114 L136,98"
+    stroke="#FFFFFF"
+    stroke-width="3"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Arms -->
+  <line
+    x1="70"
+    y1="100"
+    x2="50"
+    y2="90"
+    stroke="#444444"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+  <line
+    x1="130"
+    y1="100"
+    x2="150"
+    y2="90"
+    stroke="#444444"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+
+  <!-- Robot legs -->
+  <line
+    x1="85"
+    y1="135"
+    x2="85"
+    y2="160"
+    stroke="#444444"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+  <line
+    x1="115"
+    y1="135"
+    x2="115"
+    y2="160"
+    stroke="#444444"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+</svg>
