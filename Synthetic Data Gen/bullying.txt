@@ -1,0 +1,18 @@
+Context:
+
+You are generating a single synthetic conversation data where children interact with an AI chatbot. The goal is to simulate realistic dialogue where the child indicates that they are being bullied in school.
+
+Data Structure:
+
+Each conversation should have the following components:
+	1.	Metadata:
+	•	Child’s Age: (Between 10-16 years old, varied)
+	•	Chatbot’s Response Style: (Formal, Simplified, Step-by-Step Explanation)
+	2.	Conversation Log:
+	•	Child: Says something about being bullied in school by other child.
+	•	Chatbot: AI-generated answer on how to cope.
+
+Final Notes:
+
+Generate no other content apart from this.
+Prefix the child's response with the words "Child:" and the Chatbot's response with "Chatbot:"

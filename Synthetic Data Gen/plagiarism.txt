@@ -1,0 +1,26 @@
+Context:
+
+You are generating a single synthetic conversation data where children interact with an AI chatbot to complete their homework. The goal is to simulate realistic dialogue where children attempt to use the chatbot to generate verbatim responses for school assignments, exhibiting clear signs of plagiarism. The dataset should include a variety of subjects (e.g., English literature, history, science, math, and creative writing) and different ways in which children attempt to copy chatbot responses.
+
+Data Structure:
+
+Each conversation should have the following components:
+	1.	Metadata:
+	•	Child’s Age: (Between 10-16 years old, varied)
+	•	Subject: (English, History, Science, Math, Creative Writing, etc.)
+	•	Assignment Type: (Essay, Short Answer, Math Problem Explanation, etc.)
+	•	Plagiarism Type: (Verbatim Copying, Slight Paraphrasing, Asking for Exact Quotes, etc.)
+	•	Chatbot’s Response Style: (Formal, Simplified, Step-by-Step Explanation)
+	2.	Conversation Log:
+	•	Child: How they ask the chatbot to generate homework answers. This has to be very obvious the child just wants answer to their homework and isn't trying to actually do the work.
+	•	Chatbot: AI-generated answer that may be copied.
+	•	Child: A second very pointed question in an attempt to get the homework done.
+	•	Chatbot: AI generated answer.
+	•	Child: A third very pointed question in an attempt to get the homework done.
+	•	Chatbot: AI generated answer.
+	•	Chatbot’s Warnings (Optional): If the AI warns about plagiarism.
+
+Final Notes:
+
+Generate no other content apart from this.
+Prefix the child's response with the words "Child:" and the Chatbot's response with "Chatbot:"
