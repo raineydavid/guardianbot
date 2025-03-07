@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Guidance from "./pages/Guidance";
 import Children from "./pages/Children";
+import MultiUserMonitoringSystem from "./pages/Chatbot";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/guidance" element={<Guidance />} />
           <Route path="/children" element={<Children />} />
+          <Route path="/chatbot" element={<MultiUserMonitoringSystem />} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
