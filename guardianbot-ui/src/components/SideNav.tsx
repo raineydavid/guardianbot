@@ -15,9 +15,6 @@ const SideNav = () => {
     { title: "Dashboard", href: "/", icon: HomeIcon },
     { title: "Guidance", href: "/guidance", icon: ShieldAlert },
     { title: "Children", href: "/children", icon: UserRound },
-    { title: "Analytics", href: "/analytics", icon: BarChart },
-    { title: "Alert Rules", href: "/rules", icon: Bell },
-    { title: "Settings", href: "/settings", icon: Settings },
   ];
 
   return (
