@@ -1,9 +1,8 @@
-
-export type AlertSeverity = 'low' | 'medium' | 'high';
+export type AlertSeverity = "low" | "medium" | "high";
 
 export interface Message {
   id: string;
-  sender: 'user' | 'ai';
+  sender: "user" | "ai";
   content: string;
   timestamp: string;
   flagged?: boolean;
@@ -11,9 +10,9 @@ export interface Message {
 }
 
 export interface ChatAlert {
-  id: string;
-  childName: string;
-  childId: string;
+  id: number;
+  childName: string | null;
+  childId: number | null;
   aiPlatform: string;
   severity: AlertSeverity;
   timestamp: string;
