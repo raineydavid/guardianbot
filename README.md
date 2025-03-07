@@ -1,4 +1,4 @@
-# guardianBot
+# Guardian BOT
 
 guardianBot is a comprehensive child safety monitoring and guidance system that helps parents and guardians protect their children in the digital age. The system provides real-time monitoring, alerts, and guidance for various online safety concerns.
 
