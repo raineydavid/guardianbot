@@ -6,6 +6,7 @@ import {
   Cog,
   BarChart,
   Bell,
+  Bot,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NavLink } from "react-router-dom";
@@ -15,6 +16,7 @@ const SideNav = () => {
     { title: "Dashboard", href: "/", icon: HomeIcon },
     { title: "Guidance", href: "/guidance", icon: ShieldAlert },
     { title: "Children", href: "/children", icon: UserRound },
+    { title: "Chatbot", href: "/chatbot", icon: Bot },
   ];
 
   return (
