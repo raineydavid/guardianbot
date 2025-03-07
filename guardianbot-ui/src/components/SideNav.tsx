@@ -1,5 +1,12 @@
-
-import { HomeIcon, ShieldAlert, UserRound, Settings, Cog, BarChart, Bell } from "lucide-react";
+import {
+  HomeIcon,
+  ShieldAlert,
+  UserRound,
+  Settings,
+  Cog,
+  BarChart,
+  Bell,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NavLink } from "react-router-dom";
 
@@ -24,8 +31,8 @@ const SideNav = () => {
               className={({ isActive }) =>
                 cn(
                   "flex items-center gap-3 rounded-md px-3 py-2 text-sm transition-colors",
-                  isActive 
-                    ? "bg-sidebar-accent text-sidebar-accent-foreground" 
+                  isActive
+                    ? "bg-sidebar-accent text-sidebar-accent-foreground"
                     : "hover:bg-sidebar-accent/50 text-sidebar-foreground"
                 )
               }
@@ -39,11 +46,15 @@ const SideNav = () => {
       <div className="px-3 py-2">
         <div className="flex items-center gap-3 rounded-md bg-sidebar-accent/50 px-3 py-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary">
-            <span className="text-xs font-medium text-primary-foreground">KS</span>
+            <span className="text-xs font-medium text-primary-foreground">
+              KS
+            </span>
           </div>
           <div className="flex flex-col">
-            <span className="text-sm font-medium">KidSafe Monitor</span>
-            <span className="text-xs text-sidebar-foreground/70">Trial • 12 days left</span>
+            <span className="text-sm font-medium">Guardian Bot</span>
+            <span className="text-xs text-sidebar-foreground/70">
+              Trial • 12 days left
+            </span>
           </div>
         </div>
       </div>
